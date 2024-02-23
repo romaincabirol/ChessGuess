@@ -1,13 +1,13 @@
-import React, { useLayoutEffect, ReactNode } from "react";
+import React, { useLayoutEffect } from "react";
 import { pgnView } from "@mliebelt/pgn-viewer";
 
 // Define props interface
 interface PGNViewerProps {
-  children: ReactNode;
+  pgn: string;
 }
 
-const PGNViewer: React.FC<PGNViewerProps> = ({ children }) => {
-  const gameDescription = String(children);
+const PGNViewer: React.FC<PGNViewerProps> = ({ pgn }) => {
+  const gameDescription = String(pgn);
   const id = "board";
   
   // Render chess board using pgnView

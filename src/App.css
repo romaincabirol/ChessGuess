@@ -41,6 +41,7 @@
   color: #888;
 }
 
+/* Debug to trying to select first child class timeNormal of class yellow */
 .yellow + .timeNormal {
   background-color: red!important;
 }
